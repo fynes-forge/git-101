@@ -1,0 +1,5 @@
+# Grade 8 Practice File
+
+This file is for the real-world scenario exercises.
+
+Use it for Gitflow, PR, and GPG signing practice.

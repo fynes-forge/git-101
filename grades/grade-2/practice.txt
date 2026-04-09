@@ -1,0 +1,6 @@
+# Grade 2 Practice File
+
+This file is here for you to edit during the Grade 2 exercises.
+
+Add lines, stage them, commit them, and unstage them.
+You can always restore this file with: git restore grades/grade-2/practice.txt

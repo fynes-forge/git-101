@@ -1,0 +1,5 @@
+# Grade 7 Practice File
+
+This file is used in the advanced merge conflict exercises.
+
+Edit this file on different branches to create conflicts to resolve.

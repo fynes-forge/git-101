@@ -1,42 +1,46 @@
 ---
 name: Bug Report
-about: Something is broken or behaving unexpectedly
-title: "fix: <short description of the bug>"
-labels: ["bug"]
-assignees: ""
+about: A command doesn't work, output is wrong, or a step is missing
+title: "[BUG] "
+labels: bug
+assignees: ''
 ---
 
-## Description
+## Which grade and exercise?
 
-<!-- A clear and concise description of the bug. -->
+e.g. Grade 4 — Exercise 4.4 (Resolve a Merge Conflict)
 
-## Steps to Reproduce
+## What did you expect to happen?
 
-1. 
-2. 
-3. 
+Describe the correct behaviour or output you expected.
 
-## Expected Behaviour
+## What actually happened?
 
-<!-- What should have happened? -->
-
-## Actual Behaviour
-
-<!-- What actually happened? Include any error messages or stack traces. -->
+Paste the error message or unexpected output:
 
 ```
-Paste error output here
+paste output here
 ```
 
-## Environment
+## The command causing the issue
 
-| Field | Value |
-|---|---|
-| OS | |
-| Python version | |
-| Package version | |
-| Relevant dependencies | |
+```bash
+# paste the command here
+```
 
-## Additional Context
+## Your environment
 
-<!-- Screenshots, logs, related issues, or anything else relevant. -->
+- **OS:** (e.g. macOS 14, Windows 11, Ubuntu 22.04)
+- **Git version:** (run `git --version`)
+- **Shell:** (e.g. bash, zsh, PowerShell)
+
+## Steps to reproduce
+
+1. Clone the repo
+2. Navigate to `grades/grade-X/`
+3. Run the command in Exercise X.Y
+4. See error
+
+## Additional context
+
+Screenshots, extra context, or anything else that might help.

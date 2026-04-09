@@ -1,0 +1,5 @@
+# Grade 5 Practice File
+
+This file is for the diff, revert, and reset exercises.
+
+Edit this file, stage it, and use git diff to inspect changes at each step.

@@ -1,0 +1,5 @@
+# Grade 6 Practice File
+
+This file is for stash, cherry-pick, and rebase exercises.
+
+Stash changes here, switch branches, and restore them.

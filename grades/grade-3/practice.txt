@@ -1,0 +1,6 @@
+# Grade 3 Practice File
+
+This file is here for you to edit and push during the Grade 3 exercises.
+
+Try: edit this file → git add → git commit → git push
+Then check your GitHub repo to confirm the change appeared.

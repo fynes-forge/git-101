@@ -1,0 +1,5 @@
+# Team Config
+
+project: git-101
+version: 1.0.0
+description: A shared config file edited by two developers simultaneously.

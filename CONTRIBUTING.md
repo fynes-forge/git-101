@@ -1,121 +1,98 @@
-# Contributing to Fynes Forge Projects
+# Contributing to Git 101
 
-Thank you for your interest in contributing. This guide covers everything you need to know to open a high-quality pull request.
+Thank you for helping improve this course! Contributions of all sizes are welcome — from fixing a typo to suggesting a new exercise.
 
 ---
 
-## Code of Conduct
+## Ways to Contribute
 
-Be respectful, constructive, and direct. Fynes Forge projects follow a simple standard: treat contributors the way you'd want to be treated on a professional engineering team.
+- 🐛 **Bug report** — a command doesn't work, output doesn't match, or a step is missing
+- ✏️ **Wording fix** — something is unclear or incorrectly explained
+- 💡 **Exercise suggestion** — a good hands-on task for a grade
+- 🖥️ **OS / platform note** — a command behaves differently on Windows, macOS, or Linux
+- 📄 **Docs improvement** — README, cheatsheet, or setup clarifications
+
+---
+
+## Before You Start
+
+1. **Check existing issues** — your bug or idea may already be logged.
+2. **One change per PR** — keeps reviews focused and fast.
+3. **Test your commands** — run any Git commands you add before submitting.
 
 ---
 
 ## How to Contribute
 
-### Reporting a Bug
-
-1. Search [existing issues](../../issues) to avoid duplicates
-2. Open a new issue using the **Bug Report** template
-3. Include: what you expected, what happened, steps to reproduce, and your environment
-
-### Suggesting a Feature
-
-1. Open an issue using the **Feature Request** template
-2. Describe the problem you're solving, not just the solution
-3. Wait for a maintainer to approve the direction before opening a PR
-
-### Submitting a Pull Request
-
-1. Fork the repository and create a branch from `main`
-2. Name your branch descriptively: `fix/broken-pipeline-config` or `feat/add-dbt-support`
-3. Make your changes — keep commits small and focused
-4. Ensure all checks pass locally before pushing (see below)
-5. Open a PR using the provided template
-6. A maintainer will review within a reasonable timeframe
-
----
-
-## Branch Naming
-
-| Type | Pattern | Example |
-|---|---|---|
-| Feature | `feat/<description>` | `feat/add-snowflake-connector` |
-| Bug fix | `fix/<description>` | `fix/null-handling-in-transform` |
-| Documentation | `docs/<description>` | `docs/update-getting-started` |
-| Chore | `chore/<description>` | `chore/bump-dependencies` |
-| Release | `release/<version>` | `release/1.2.0` |
-
----
-
-## Commit Messages
-
-Follow [Conventional Commits](https://www.conventionalcommits.org/):
-
-```
-<type>(<scope>): <short description>
-
-[optional body]
-
-[optional footer]
-```
-
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-
-**Examples:**
-
-```
-feat(pipeline): add incremental load support for Snowflake
-fix(transform): handle null values in date columns
-docs(readme): update installation steps for Python 3.12
-chore(deps): bump ruff to 0.4.0
-```
-
----
-
-## Code Standards
-
-All contributions must pass the following checks before a PR can be merged:
+### 1. Fork & Clone
 
 ```bash
-ruff check .          # Linting
-ruff format .         # Formatting
-mypy src/             # Type checking
-pytest                # Tests
+git clone https://github.com/<your-username>/git-101.git
+cd git-101
 ```
 
-These run automatically in CI. A failing check blocks merge.
+### 2. Create a Branch
 
-**Key principles:**
+```bash
+git checkout -b fix/grade4-conflict-instructions
+git checkout -b feat/grade6-new-rebase-exercise
+git checkout -b docs/add-windows-note-grade1
+```
 
-- Type-hint all function signatures
-- Write docstrings for public functions and classes
-- Keep functions small and single-purpose
-- Prefer explicit over clever — code is read far more than it is written
-- Tests are required for new features; a PR without tests will not be merged
+### 3. Make Your Changes
+
+- **Grade exercises** live in `grades/grade-X/README.md`
+- **Practice files** live in `grades/grade-X/practice.txt` (keep them simple)
+- **Cheatsheet** lives in `tips/cheatsheet.md`
+- **CI workflow** lives in `.github/workflows/ci.yml`
+
+### 4. Commit with a Clear Message
+
+```bash
+git commit -m "fix: correct git reset flag table in grade 5"
+git commit -m "feat: add interactive rebase exercise to grade 6"
+git commit -m "docs: add Windows path note to grade 1 config step"
+```
+
+### 5. Push & Open a PR
+
+```bash
+git push origin your-branch-name
+```
+
+Open a Pull Request on GitHub and fill in the PR template.
 
 ---
 
-## Pull Request Standards
+## Exercise Contribution Guidelines
 
-- PRs should be small and focused — one logical change per PR
-- Reference the issue your PR closes: `Closes #42`
-- Fill in the PR template completely — empty sections will prompt a request for changes
-- Screenshots or output logs are appreciated for non-trivial changes
+When adding or editing exercises, follow the existing style:
 
----
-
-## Versioning
-
-This project follows [Semantic Versioning](https://semver.org/):
-
-- `MAJOR` — breaking changes
-- `MINOR` — new backwards-compatible features
-- `PATCH` — bug fixes
-
-Changes are documented in [CHANGELOG.md](./CHANGELOG.md).
+- **Use a numbered heading** (`### Exercise X.Y — Short Title`)
+- **Show the exact commands** in fenced code blocks with `bash` syntax highlighting
+- **Explain the output** students should expect with a `> **Expected:**` or `> **Tip:**` blockquote
+- **Include a Reset section** if the exercise leaves behind files or branches
+- **Keep it focused** — each exercise should cover one concept clearly
 
 ---
 
-## Licence
+## Platform Notes
 
-By contributing, you agree that your contributions will be licensed under the same [MIT Licence](./LICENSE) as the project.
+Git behaves slightly differently across operating systems. If you're adding a platform-specific note, format it like this:
+
+> **Windows note:** On Windows, use `Get-Content .git/HEAD` instead of `cat .git/HEAD`.
+
+---
+
+## Reporting Issues
+
+Use the issue templates:
+- **Bug report** — command errors, wrong output, broken steps
+- **Exercise suggestion** — new practice tasks
+- **Documentation** — typos, unclear wording, missing context
+
+---
+
+## Code of Conduct
+
+Be constructive and kind. This course welcomes learners at all levels — feedback should help people improve, not discourage them.

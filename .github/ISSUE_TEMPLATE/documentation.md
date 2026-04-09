@@ -1,21 +1,25 @@
 ---
-name: Documentation Issue
-about: Something in the docs is missing, wrong, or unclear
-title: "docs: <short description>"
-labels: ["documentation"]
-assignees: ""
+name: Documentation / Improvement
+about: A typo, unclear explanation, missing context, or platform-specific note
+title: "[DOCS] "
+labels: documentation
+assignees: ''
 ---
 
-## What's the Issue?
+## What needs improving?
 
-<!-- Is something missing, incorrect, or unclear? Where? -->
+Describe what is unclear, incorrect, or missing.
 
-**File / section affected:**
+## Where is it?
 
-## Suggested Improvement
+e.g. `grades/grade-3/README.md` — Exercise 3.5  
+e.g. `tips/cheatsheet.md` — Stash section  
+e.g. `README.md` — Getting Started step 2
 
-<!-- What should the documentation say or include? -->
+## Suggested fix
 
-## Additional Context
+What should it say instead?
 
-<!-- Any links, references, or further detail. -->
+## Additional context
+
+OS-specific? Editor-specific? Any other notes.

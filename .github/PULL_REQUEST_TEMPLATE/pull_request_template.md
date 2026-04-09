@@ -1,67 +1,39 @@
-## Summary
+## What does this PR do?
 
-<!-- A concise description of what this PR does and why. -->
+<!-- A short summary of your change. -->
 
-Closes #<!-- issue number -->
+## Type of change
 
----
+- [ ] Bug fix (incorrect command, wrong output, broken step)
+- [ ] New exercise
+- [ ] Documentation / wording improvement
+- [ ] OS / platform note (Windows, macOS, Linux)
+- [ ] CI / workflow update
+- [ ] Other: ___________
 
-## Type of Change
+## Related issue
 
-- [ ] Bug fix (`fix:`)
-- [ ] New feature (`feat:`)
-- [ ] Documentation update (`docs:`)
-- [ ] Refactor (`refactor:`)
-- [ ] Chore / dependency update (`chore:`)
-- [ ] Breaking change (adds `!` after type, e.g. `feat!:`)
+Closes #
 
----
+## Changes made
 
-## Changes Made
+<!-- List the files changed and what was updated. -->
 
-<!-- List the key changes. Be specific — reviewers should be able to understand the scope without reading every line. -->
+- `grades/grade-X/README.md` —
+- `tips/cheatsheet.md` —
+- Other —
 
-- 
-- 
-- 
+## Tested on
 
----
+- [ ] macOS
+- [ ] Linux
+- [ ] Windows
+- [ ] Git version: ___________
 
-## Testing
+## Checklist
 
-<!-- Describe how you tested this. -->
-
-- [ ] Added / updated unit tests
-- [ ] All existing tests pass locally (`pytest`)
-- [ ] Tested manually — describe how:
-
----
-
-## Code Quality
-
-- [ ] `ruff check .` passes
-- [ ] `ruff format .` applied
-- [ ] `mypy src/` passes
-- [ ] No `print()` statements left in production code
-- [ ] No hardcoded secrets or credentials
-- [ ] Docstrings added for new public functions / classes
-
----
-
-## Documentation
-
-- [ ] README updated (if behaviour changed)
-- [ ] CHANGELOG.md updated under `[Unreleased]`
-- [ ] GETTING_STARTED.md updated (if setup steps changed)
-
----
-
-## Screenshots / Output
-
-<!-- If applicable, paste terminal output, test results, or screenshots. -->
-
----
-
-## Notes for Reviewer
-
-<!-- Anything the reviewer should pay particular attention to, or context that isn't obvious from the code. -->
+- [ ] I have read `CONTRIBUTING.md`
+- [ ] I tested all commands I added or changed
+- [ ] Exercise format matches the existing style (numbered heading, bash code blocks, tip blockquotes)
+- [ ] Each grade's Reset section is updated if needed
+- [ ] One logical change per PR

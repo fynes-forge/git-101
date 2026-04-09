@@ -1,0 +1,10 @@
+# Login Feature
+
+This file represents a completed login feature ready to be merged into main.
+
+## Changes
+- Added user authentication logic
+- Added session management
+- Added logout endpoint
+
+Status: Ready for review

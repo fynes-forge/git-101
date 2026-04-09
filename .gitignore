@@ -1,0 +1,30 @@
+# Environment & secrets — never commit these
+.env
+.env.*
+*.env
+secrets.*
+credentials.*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Node (if any tooling is added)
+node_modules/
+
+# Python (if any scripts are added)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
